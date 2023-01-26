@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars vertical"></i>
+    </div>
+    <div class="side-bar">
+      <div class="close-btn">
+        <i class="fas fa-times vertical"></i>
+      </div>
+      <div class="logo">
+        <a href="https://priklady.doucovanispetrem.cz/">
+          <img
+            src="Doucovani-Matika-Statistika-Ekonomicke-metody-IKONA.png"
+            alt="Logo" />
+        </a>
+      </div>
+      <h1>Doučování</h1>
+      <div class="menu">
+        <div class="item">
+          <a class="sub-btn" data-link>
+            Matice
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a
+              href="/pages/matice/zakladni-operace.html"
+              id="matice/zakladni-operace"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Základní operace
+            </a>
+            <a
+              href="/pages/matice/hodnosti.html"
+              id="matice/hodnosti"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Hodnost
+            </a>
+            <a
+              href="/pages/matice/determinanty.html"
+              id="matice/determinanty"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Determinanty
+            </a>
+            <a
+              href="/pages/matice/inverzni-matice.html"
+              id="matice/inverzni-matice"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Inverzní matice
+            </a>
+            <a
+              href="/pages/matice/maticove-rovnice.html"
+              id="matice/maticove-rovnice"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Maticové rovnice
+            </a>
+            <a
+              href="/pages/matice/vlastni-cisla-a-vektory.html"
+              id="matice/vlastni-cisla-a-vektory"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Vlastní čísla a vektory
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="sub-btn" data-link>
+            Soustavy lineárních rovnic
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a
+              href="/pages/soustavy-linearnich-rovnic/homogenni.html"
+              id="soustavy-linearnich-rovnic/homogenni"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Homogenní
+            </a>
+            <a
+              href="/pages/soustavy-linearnich-rovnic/nehomogenni.html"
+              id="soustavy-linearnich-rovnic/nehomogenni"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Nehomogenní
+            </a>
+            <a
+              href="/pages/soustavy-linearnich-rovnic/cramerovo-pravidlo.html"
+              id="soustavy-linearnich-rovnic/cramerovo-pravidlo"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Cramerovo pravidlo
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="sub-btn" data-link>
+            Funkce
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a
+              href="/pages/funkce/linearni.html"
+              id="funkce/linearni"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Lineární
+            </a>
+            <a
+              href="/pages/funkce/kvadraticke.html"
+              id="funkce/kvadraticke"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Kvadratické
+            </a>
+            <a
+              href="/pages/funkce/mocninne.html"
+              id="funkce/mocninne"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Mocninné
+            </a>
+            <a
+              href="/pages/funkce/n-ta-odmocnina.html"
+              id="funkce/n-ta-odmocnina"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              N-tá odmocnina
+            </a>
+            <a
+              href="/pages/funkce/linearne-lomena.html"
+              id="funkce/linearne-lomena"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Lineárně lomená
+            </a>
+            <a
+              href="/pages/funkce/exponencionalni.html"
+              id="funkce/exponencionalni"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Exponenciální
+            </a>
+            <a
+              href="/pages/funkce/logaritmicka.html"
+              id="funkce/logaritmicka"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Logaritmická
+            </a>
+            <a
+              href="/pages/funkce/goniometricka.html"
+              id="funkce/goniometricka"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Goniometrická
+            </a>
+            <a
+              href="/pages/funkce/cyklometricka.html"
+              id="funkce/cyklometricka"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Cyklometrická
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <a
+            href="/pages/definicni-obor.html"
+            onClick="reply_click(this.id)"
+            data-link>
+            Definiční obor
+          </a>
+        </div>
+        <div class="item">
+          <a class="sub-btn" data-link>
+            Limity funkcí
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a
+              href="/pages/limity-funkci/zakladni.html"
+              id="limity-funkci/zakladni"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Základní
+            </a>
+            <a
+              href="/pages/limity-funkci/deleni-nulou.html"
+              id="limity-funkci/deleni-nulou"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Dělení nulou
+            </a>
+            <a
+              href="/pages/limity-funkci/pouziti-vzorcu.html"
+              id="limity-funkci/pouziti-vzorcu"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Použití vzorců
+            </a>
+            <a
+              href="/pages/limity-funkci/v-nevlastnim-bode.html"
+              id="limity-funkci/v-nevlastnim-bode"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              V nevlastním bodě
+            </a>
+            <a
+              href="/pages/limity-funkci/l-hospitalovo-pravidlo.html"
+              id="limity-funkci/l-hospitalovo-pravidlo"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              L'Hospitalovo pravidlo
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <a
+            href="/pages/body-nespojitosti.html"
+            id="body-nespojitosti"
+            onClick="reply_click(this.id)"
+            data-link>
+            Body nespojitosti
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="/pages/asymptoty-funkce.html"
+            id="asymptoty-funkce"
+            onClick="reply_click(this.id)"
+            data-link>
+            Asymptoty funkce
+          </a>
+        </div>
+        <div class="item">
+          <a class="sub-btn" data-link>
+            Derivace
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a
+              href="/pages/derivace/soucet-a-rozdil.html"
+              id="derivace/soucet-a-rozdil"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Součet a rozdíl
+            </a>
+            <a
+              href="/pages/derivace/soucin.html"
+              id="derivace/soucin"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Součin
+            </a>
+            <a
+              href="/pages/derivace/podil.html"
+              id="derivace/podil"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Podíl
+            </a>
+            <a
+              href="/pages/derivace/slozena-funkce.html"
+              id="derivace/slozena-funkce"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Složená funkce
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <a
+            href="/pages/tecny-a-normaly.html"
+            id="tecmy-a-normaly"
+            onClick="reply_click(this.id)"
+            data-link>
+            Tečny a normály
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="/pages/tayloruv-polynom.html"
+            id="tayloruv-polynom"
+            onClick="reply_click(this.id)"
+            data-link>
+            Taylorův polynom
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="/pages/monotonie.html"
+            id="monotonie"
+            onClick="reply_click(this.id)"
+            data-link>
+            Monotonie
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="/pages/extremy.html"
+            id="extremy"
+            onClick="reply_click(this.id)"
+            data-link>
+            Extrémy
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="/pages/zakrivenost-a-inflexni-body.html"
+            id="zakrivenost-a-inflexní-body">
+            Zakřivenost a inflexní body
+          </a>
+        </div>
+        <div class="item">
+          <a href="/pages/prubeh-funkce.html">Průběh funkce</a>
+        </div>
+        <div class="item">
+          <a class="sub-btn" data-link>
+            Integrály
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a
+              href="/pages/integraly/neurcite.html"
+              id="integraly/neurcite"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Neurčité
+            </a>
+            <a
+              href="/pages/integraly/urcite.html"
+              id="integraly/urcite"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Určité
+            </a>
+            <a
+              href="/pages/integraly/obsahy-ploch.html"
+              id="integraly/obsahy-ploch"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              Obsahy ploch
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <a class="sub-btn" data-link>
+            Diferenciální rovnice
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a
+              href="/pages/diferencialni-rovnice/prvniho-radu.html"
+              id="diferencialni-rovnice/prvniho-radu"
+              onClick="reply_click(this.id)"
+              class="sub-item"
+              data-link>
+              1. řádu
+            </a>
+            <a
+              href="/pages/diferencialni-rovnice/druheho-radu.html"
+              id="diferencialni-rovnice/druheho-radu"
+              onClick="reply_click(this.id)"
+              class="sub-item">
+              2. řádu
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //jquery for expand and collapse the sidebar
+        $('.menu-btn').click(function () {
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css('visibility', 'hidden');
+        });
+
+        //For close button
+        $('.close-btn').click(function () {
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css('visibility', 'visible');
+        });
+
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function () {
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+      });
+    </script>
+  </body>
+</html>

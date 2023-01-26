@@ -1,0 +1,39 @@
+#grid {
+  display: grid;
+  grid-template-rows: 35.3% 1fr;
+  grid-template-columns: 16% 75.5% 8.5%;
+  gap: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#div1 {
+  grid-area: 1 / 2 / 2 / 4;
+  /*background-color: green;*/
+}
+#div2 {
+  grid-area: 1 / 1 / 3 / 2;
+  // background-color: red;
+}
+
+#div3 {
+  grid-area: 2 / 2 / 3 / 3;
+  // background-color: brown;
+}
+
+#div4 {
+  grid-area: 2 / 3 / 3 / 4;
+  // background-color: yellow;
+}
+
+@media screen and (max-width: 1024px) {
+  #grid {
+    grid-template-columns: 20% 78% 2%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #grid {
+    grid-template-columns: 8.5% 83% 8.5%;
+  }
+}
