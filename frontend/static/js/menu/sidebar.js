@@ -1,3 +1,5 @@
+// import obr from './Doucovani-Matika-Statistika-Ekonomicke-metody-IKONA.png';
+
 class verticalmenu extends HTMLElement {
   constructor() {
     super();
@@ -12,14 +14,14 @@ class verticalmenu extends HTMLElement {
     <div class="logo">
       <a href="https://priklady.doucovanispetrem.cz/">
         <img
-          src="Doucovani-Matika-Statistika-Ekonomicke-metody-IKONA.png"
+          src="./Doucovani-Matika-Statistika-Ekonomicke-metody-IKONA.png"
           alt="Logo" />
       </a>
     </div>
     <h1>Doučování</h1>
     <div class="menu">
       <div class="item">
-        <a class="sub-btn" data-link>
+        <a class="sub-btn">
           Matice
           <i class="fas fa-angle-right dropdown"></i>
         </a>
@@ -75,7 +77,7 @@ class verticalmenu extends HTMLElement {
         </div>
       </div>
       <div class="item">
-        <a class="sub-btn" data-link>
+        <a class="sub-btn">
           Soustavy lineárních rovnic
           <i class="fas fa-angle-right dropdown"></i>
         </a>
@@ -107,7 +109,7 @@ class verticalmenu extends HTMLElement {
         </div>
       </div>
       <div class="item">
-        <a class="sub-btn" data-link>
+        <a class="sub-btn">
           Funkce
           <i class="fas fa-angle-right dropdown"></i>
         </a>
@@ -187,15 +189,12 @@ class verticalmenu extends HTMLElement {
         </div>
       </div>
       <div class="item">
-        <a
-          href="/definicni-obor"
-          onClick="reply_click(this.id)"
-          data-link>
+        <a href="/definicni-obor" onClick="reply_click(this.id)" data-link>
           Definiční obor
         </a>
       </div>
       <div class="item">
-        <a class="sub-btn" data-link>
+        <a class="sub-btn">
           Limity funkcí
           <i class="fas fa-angle-right dropdown"></i>
         </a>
@@ -261,7 +260,7 @@ class verticalmenu extends HTMLElement {
         </a>
       </div>
       <div class="item">
-        <a class="sub-btn" data-link>
+        <a class="sub-btn">
           Derivace
           <i class="fas fa-angle-right dropdown"></i>
         </a>
@@ -349,7 +348,7 @@ class verticalmenu extends HTMLElement {
         <a href="/prubeh-funkce">Průběh funkce</a>
       </div>
       <div class="item">
-        <a class="sub-btn" data-link>
+        <a class="sub-btn">
           Integrály
           <i class="fas fa-angle-right dropdown"></i>
         </a>
@@ -381,7 +380,7 @@ class verticalmenu extends HTMLElement {
         </div>
       </div>
       <div class="item">
-        <a class="sub-btn" data-link>
+        <a class="sub-btn">
           Diferenciální rovnice
           <i class="fas fa-angle-right dropdown"></i>
         </a>
