@@ -1,10 +1,9 @@
-let selectedPage = localStorage.getItem('page-value');
-
-const path = `./objects/${selectedPage.toString()}.js`;
-
 initMath();
 
-async function initMath() {
+export default async function initMath() {
+  let selectedPage = localStorage.getItem('page-value');
+
+  const path = `./objects/${selectedPage.toString()}.js`;
   const { examples } = await import(path);
   handleExamples(examples);
 }

@@ -2,13 +2,9 @@
   background: #1b1a1b;
   backdrop-filter: blur(15px);
   width: 100%;
-  // min-width: 165px;
-  // max-width: 250px;
   height: 100vh;
-  // position: fixed;
+  position: sticky;
   top: 0;
-  z-index: 50;
-  // left: 0px;
   overflow-y: auto;
   transition: 0.6s ease;
   transition-property: left;
@@ -139,5 +135,8 @@ h1 {
 @media screen and (max-width: 850px) {
   .side-bar {
     width: 250px;
+  }
+  .side-bar.non-active {
+    margin-left: -250px;
   }
 }

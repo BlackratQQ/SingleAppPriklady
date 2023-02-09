@@ -3,7 +3,9 @@
 class verticalmenu extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `      
+    this.innerHTML = `
+    
+<div class="side-bar-wrapper">
     <div class="menu-btn">
     <i class="fas fa-bars vertical"></i>
   </div>
@@ -14,7 +16,7 @@ class verticalmenu extends HTMLElement {
     <div class="logo">
       <a href="https://priklady.doucovanispetrem.cz/">
         <img
-          src="./Doucovani-Matika-Statistika-Ekonomicke-metody-IKONA.png"
+          src="/images/logo.png"
           alt="Logo" />
       </a>
     </div>
@@ -405,6 +407,7 @@ class verticalmenu extends HTMLElement {
       </div>
     </div>
   </div>
+</div>
   `;
   }
 }
@@ -420,27 +423,15 @@ $(document).ready(function () {
 
   //jquery for expand and collapse the sidebar
 
-  if (window.innerWidth > 850) {
-    $('.close-btn').click(function () {
-      $('.side-bar').addClass('non-active');
-      $('.menu-btn').css('visibility', 'visible');
-    });
-
-    $('.menu-btn').click(function () {
-      $('.side-bar').removeClass('non-active');
-      $('.menu-btn').css('visibility', 'hidden');
-    });
-  } else {
+  $('.close-btn').click(function () {
     $('.side-bar').addClass('non-active');
-    $('.menu-btn').click(function () {
-      $('.side-bar').removeClass('non-active');
-      $('.menu-btn').css('visibility', 'hidden');
-    });
-    $('.close-btn').click(function () {
-      $('.side-bar').addClass('non-active');
-      $('.menu-btn').css('visibility', 'visible');
-    });
-  }
+    $('.menu-btn').css('visibility', 'visible');
+  });
+
+  $('.menu-btn').click(function () {
+    $('.side-bar').removeClass('non-active');
+    $('.menu-btn').css('visibility', 'hidden');
+  });
 });
 
 function reply_click(clicked_id) {
