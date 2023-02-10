@@ -1,9 +1,11 @@
 import abstractview from '../abstractview.js';
+import initMath from '../../logic.js';
 
 export default class extends abstractview {
   constructor() {
     super();
     this.setTitle('Zakřivenost a inflexní body');
+    initMath();
   }
 
   async getHtml() {

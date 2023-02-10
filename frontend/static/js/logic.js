@@ -77,7 +77,7 @@ function handleExamples(examples) {
         button.addEventListener('click', () =>
           button.classList.toggle('clicked')
         );
-        button.addEventListener('click', () => scrollWin());
+        // button.addEventListener('click', () => scrollWin());
         // Add the toggle button to the card
         card.appendChild(button);
 

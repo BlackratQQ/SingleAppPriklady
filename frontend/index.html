@@ -22,18 +22,23 @@
   </head>
   <body>
     <div id="grid">
-      <div id="div1"></div>
-      <div id="div2">
-        <vertical-menu></vertical-menu>
-      </div>
       <div id="div3">
         <div id="app"></div>
+      </div>
+      <div id="div1">
+        <header>
+          <banner-img></banner-img>
+        </header>
+      </div>
+      <div id="div2">
+        <vertical-menu></vertical-menu>
       </div>
       <div id="div4"></div>
     </div>
     <script src="/static/js/menu/sidebar.js"></script>
     <script src="/static/js/index.js" type="module"></script>
     <script src="/static/js/logic.js" type="module"></script>
+    <script src="/static/js/header/banner.js"></script>
     <script>
       function reply_click(clicked_id) {
         localStorage.setItem('page-value', clicked_id);

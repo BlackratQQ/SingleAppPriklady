@@ -1,9 +1,11 @@
 import abstractview from '../abstractview.js';
+import initMath from '../../logic.js';
 
 export default class extends abstractview {
   constructor() {
     super();
     this.setTitle('Základní');
+    initMath();
   }
 
   async getHtml() {

@@ -1,5 +1,3 @@
-// import obr from './Doucovani-Matika-Statistika-Ekonomicke-metody-IKONA.png';
-
 class verticalmenu extends HTMLElement {
   constructor() {
     super();

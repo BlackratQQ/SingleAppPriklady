@@ -1,17 +1,19 @@
+@charset "UTF-8";
 #grid {
   display: grid;
-  grid-template-rows: 35.3% 1fr;
+  grid-template-rows: 400px 1fr;
   grid-template-columns: 16% 75.5% 8.5%;
   gap: 0;
-  width: 100vw;
-  height: 100vh; }
+  width: 100vw; }
 
 #div1 {
-  grid-area: 1 / 2 / 2 / 4;
-  /*background-color: green;*/ }
+  grid-area: 1 / 2 / 2 / 4; }
 
 #div2 {
-  grid-area: 1 / 1 / 3 / 2; }
+  grid-area: 1 / 1 / 3 / 2;
+  height: 100vh;
+  position: sticky;
+  top: 0; }
 
 #div3 {
   grid-area: 2 / 2 / 3 / 3; }
@@ -38,8 +40,6 @@
   backdrop-filter: blur(15px);
   width: 100%;
   height: 100vh;
-  position: sticky;
-  top: 0;
   overflow-y: auto;
   transition: 0.6s ease;
   transition-property: left; }
@@ -59,7 +59,8 @@ h1 {
   font-size: 25px;
   padding-bottom: 13px;
   font-family: sans-serif;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: #fff; }
 
 .side-bar .menu {
   width: 100%;
@@ -147,6 +148,128 @@ h1 {
   .side-bar.non-active {
     margin-left: -250px; } }
 
+.banner {
+  height: 400px;
+  background-image: url("/images/banner.jpg");
+  background-size: cover;
+  background-position: top;
+  /*Zafixuje vršek obrázku, který se nebude ořezávat*/
+  position: relative;
+  /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */ }
+
+.banner__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*elementy se počítají od levého horního rohu pozice. Toto nám udělá to, že se ta pozice posune na střed*/
+  text-align: center; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 60px; }
+
+.heading-primary--main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  /*animation-timing-function: ease-in;*/
+  /*animation-iteration-count: 3;*/
+  /*animation-delay: 3s;*/ }
+
+.heading-primary--sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  animation-name: moveInRight;
+  animation-duration: 3s; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75;
+  animation-fill-mode: backwards; }
+
+.header-btn:link,
+.header-btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 30px;
+  transition: all 0.2s;
+  position: relative; }
+
+.header-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+.header-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+  cursor: pointer; }
+
+.header-btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
+
+.btn--white::after {
+  background-color: #fff; }
+
+.header-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -171,28 +294,14 @@ body {
 a {
   color: #009579; }
 
-h1 {
-  color: #000; }
-
 h2 {
-  position: absolute;
-  font-size: 3rem;
   font-size: var(--fs-xl);
   color: #007bff; }
-  h2:before {
-    content: '';
-    position: absolute;
-    width: 80%;
-    height: 1px;
-    bottom: 0px;
-    left: 10%;
-    border-bottom: 3px solid #007bff; }
 
 .page {
   color: red; }
 
 #examples-container {
-  margin-top: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -218,11 +327,7 @@ h2 {
     flex-direction: column;
     padding: 5em 0 5em 0; }
   .image {
-    transform: scale(0.7); }
-  h2 {
-    transform: translateX(-50%);
-    width: max-content;
-    left: 50%; } }
+    transform: scale(0.7); } }
 
 .toggle {
   padding: 5px 40px;

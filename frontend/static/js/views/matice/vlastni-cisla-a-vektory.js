@@ -1,9 +1,11 @@
 import abstractview from '../abstractview.js';
+import initMath from '../../logic.js';
 
 export default class extends abstractview {
   constructor() {
     super();
     this.setTitle('Vlastni čísla a vektory');
+    initMath();
   }
 
   async getHtml() {
