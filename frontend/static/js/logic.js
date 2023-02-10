@@ -1,9 +1,9 @@
 initMath();
 
 export default async function initMath() {
-  let selectedPage = localStorage.getItem('page-value');
-
-  const path = `./objects/${selectedPage.toString()}.js`;
+  let url = window.location.pathname;
+  const path = `./objects${url}.js`;
+  console.log(path);
   const { examples } = await import(path);
   handleExamples(examples);
 }
