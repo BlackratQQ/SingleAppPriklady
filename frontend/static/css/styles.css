@@ -36,7 +36,7 @@
   --fs-400: clamp(0.7rem, 1.1vw + 1rem, 1.2rem); }
 
 .side-bar {
-  background: #1b1a1b;
+  background: #000000c9;
   backdrop-filter: blur(15px);
   width: 100%;
   height: 100vh;
@@ -80,6 +80,10 @@ h1 {
 
 .side-bar .menu .item a:hover {
   background: #33363a;
+  transition: 0.3s ease; }
+
+.active {
+  background: #007bff;
   transition: 0.3s ease; }
 
 .side-bar .menu .item i {
@@ -151,8 +155,6 @@ h1 {
 .banner {
   height: 400px;
   background-image: url("/images/banner.jpg");
-  background-size: cover;
-  background-position: top;
   /*Zafixuje vršek obrázku, který se nebude ořezávat*/
   position: relative;
   /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */ }

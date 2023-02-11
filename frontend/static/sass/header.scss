@@ -1,8 +1,8 @@
 .banner {
   height: 400px;
   background-image: url('/images/banner.jpg');
-  background-size: cover;
-  background-position: top;
+  // background-size: cover;
+  // background-position: top;
   /*Zafixuje vršek obrázku, který se nebude ořezávat*/
   position: relative;
   /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
