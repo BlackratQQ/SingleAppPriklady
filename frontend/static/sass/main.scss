@@ -2,6 +2,7 @@
 @import 'fontsizes';
 @import 'sidebar';
 @import 'header';
+@import 'horizontalMenu';
 
 * {
   margin: 0;
@@ -35,6 +36,7 @@ a {
 h2 {
   font-size: var(--fs-xl);
   color: #007bff;
+  padding: 20px 0 0 0;
 
   // &:before {
   //   content: '';
