@@ -40,4 +40,13 @@ export const examples = [
     text: 'Text5',
     image: '/images/derivace/img2.png',
   },
+  {
+    numberEx: 'pokus',
+    whatToDo: 'podil',
+    question: '\\[ \\lim_{x \\to 2} f(x) = 5 \\]',
+    answer:
+      '(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)',
+    text: 'Text2',
+    image: '/images/derivace/img2.png',
+  },
 ];

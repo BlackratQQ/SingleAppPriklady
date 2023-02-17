@@ -4,7 +4,7 @@ import initMath from '../../logic.js';
 export default class extends abstractview {
   constructor() {
     super();
-    this.setTitle('urcite');
+    this.setTitle('Integrál - Urcite');
     initMath();
   }
 
@@ -14,7 +14,7 @@ export default class extends abstractview {
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <h2> urcite</h2>
+    <h2>Limity funcí - Určité</h2>
 
     <div id="examples-container"></div>
 

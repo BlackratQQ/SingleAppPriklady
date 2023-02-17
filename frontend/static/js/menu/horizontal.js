@@ -52,7 +52,7 @@ class menudown extends HTMLElement {
                 </li>
                 <li>
                   <a href="https://www.doucovanispetrem.cz/czu/pae/">
-                    EAE (PAE)
+                    EAM (PAE)
                     <i class="fas fa-angle-right dropdown"></i>
                   </a>
                   <ul class="sub-menu-ver">

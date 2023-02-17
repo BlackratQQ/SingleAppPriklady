@@ -4,7 +4,7 @@ import initMath from '../../logic.js';
 export default class extends abstractview {
   constructor() {
     super();
-    this.setTitle('n-ta-odmocnina');
+    this.setTitle('Funkce - N-tá odmocnina');
     initMath();
   }
 
@@ -14,7 +14,7 @@ export default class extends abstractview {
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <h2> n-ta-odmocnina</h2>
+    <h2>Funkce - N-tá odmocnina</h2>
 
     <div id="examples-container"></div>
 

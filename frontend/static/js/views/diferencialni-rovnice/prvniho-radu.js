@@ -4,7 +4,7 @@ import initMath from '../../logic.js';
 export default class extends abstractview {
   constructor() {
     super();
-    this.setTitle('První řád');
+    this.setTitle('Diferenciální rovnice - První řád');
     initMath();
   }
 
@@ -14,7 +14,7 @@ export default class extends abstractview {
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <h2> První řád</h2>
+    <h2>Diferenciální rovnice - První řád</h2>
 
     <div id="examples-container"></div>
 

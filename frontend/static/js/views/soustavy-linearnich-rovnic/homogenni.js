@@ -4,7 +4,7 @@ import initMath from '../../logic.js';
 export default class extends abstractview {
   constructor() {
     super();
-    this.setTitle('Homogeni');
+    this.setTitle('Soustavy liuneárních rovnic - Homogenní');
     initMath();
   }
 
@@ -14,7 +14,7 @@ export default class extends abstractview {
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <h2> Homogeni</h2>
+    <h2>Soustavy liuneárních rovnic - Homogeni</h2>
 
     <div id="examples-container"></div>
 
