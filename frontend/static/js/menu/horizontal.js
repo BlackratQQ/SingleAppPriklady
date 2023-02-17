@@ -9,8 +9,8 @@ class menudown extends HTMLElement {
         <i class="fas fa-times horiozontal"></i>
       </div>
       <!-- <a href="/menu/horizontal/horizontalmenu.html" class="logo">
-          <i class="fa fa-shopping-bag"></i>
-        </a> -->
+            <i class="fa fa-shopping-bag"></i>
+          </a> -->
       <ul class="nav-list">
         <li>
           <a href="#">
@@ -22,7 +22,7 @@ class menudown extends HTMLElement {
               <a href="https://www.doucovanispetrem.cz/czu/">
                 ČZU
                 <i class="fas fa-angle-right dropdown"></i>
-                </a>
+              </a>
               <ul class="sub-menu-ver">
                 <li>
                   <a href="https://www.doucovanispetrem.cz/czu/paa/">
@@ -256,6 +256,19 @@ class menudown extends HTMLElement {
               </ul>
             </li>
             <li>
+              <a href="https://www.doucovanispetrem.cz/ambis/">
+                VŠ AMBIS
+                <i class="fas fa-angle-right dropdown"></i>
+              </a>
+              <ul class="sub-menu-ver">
+                <li>
+                  <a href="https://www.doucovanispetrem.cz/ambis/statistika/">
+                    Statistika
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
               <a href="https://www.doucovanispetrem.cz/matematika-obecne/">
                 Matematika obecně
                 <i class="fas fa-angle-right dropdown"></i>
@@ -403,10 +416,10 @@ class menudown extends HTMLElement {
           </ul>
         </li>
         <li>
-          <a href="#">Osobní doučování</a>
+          <a href="https://www.doucovanispetrem.cz/osobni-doucovani/">Osobní doučování</a>
         </li>
         <li>
-          <a href="#">
+          <a href=https://www.doucovanispetrem.cz/osobni-doucovani/">
             Připoj se na Facebooku
             <i class="fas fa-angle-right dropdown arrow-down"></i>
             <ul class="sub-menu-ver">
