@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #grid {
   display: grid;
-  grid-template-rows: 400px;
+  grid-template-rows: 450px auto 250px;
   grid-template-columns: 16% 75.5% 8.5%;
   gap: 0;
   width: 100vw; }
@@ -20,6 +20,9 @@
 
 #div4 {
   grid-area: 2 / 3 / 3 / 4; }
+
+#div5 {
+  grid-area: 3 / 1 / 4 / 4; }
 
 @media screen and (max-width: 1024px) {
   #grid {
@@ -153,7 +156,7 @@ h1 {
     margin-left: -250px; } }
 
 .banner {
-  height: 400px;
+  height: 450px;
   background-image: url("/images/banner.jpg");
   /*Zafixuje vršek obrázku, který se nebude ořezávat*/
   position: relative;
@@ -468,6 +471,25 @@ li.move-right {
   nav.active .nav-list {
     display: flex; } }
 
+footer {
+  text-align: center;
+  height: 100%;
+  background-color: #262627; }
+  footer h2 {
+    color: #fff; }
+  footer p {
+    font-size: 1.4rem;
+    line-height: 2rem; }
+
+.teacher {
+  color: #b9b9b9;
+  font-size: 1.7rem;
+  font-weight: bold; }
+
+.fa-solid {
+  color: white;
+  padding: 5px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -490,7 +512,9 @@ body {
   font-weight: 500; }
 
 a {
-  color: #009579; }
+  color: #007bff; }
+  a:hover {
+    color: #ff8c00; }
 
 h2 {
   font-size: var(--fs-xl);

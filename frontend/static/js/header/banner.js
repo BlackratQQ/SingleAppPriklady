@@ -1,6 +1,6 @@
 class bannerimg extends HTMLElement {
   constructor() {
-    super();
+    super()
     this.innerHTML = `            
     <div class="banner">
     <div class="banner__text-box">
@@ -14,8 +14,8 @@ class bannerimg extends HTMLElement {
       -->
     </div>
   </div>
-    `;
+    `
   }
 }
 
-window.customElements.define('banner-img', bannerimg);
+window.customElements.define('banner-img', bannerimg)

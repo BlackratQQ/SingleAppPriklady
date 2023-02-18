@@ -48,4 +48,4 @@ export const examples = [
     text: 'Text6',
     image: '/images/derivace/logaritmicka-funkce-graf.png',
   },
-];
+]

@@ -1,9 +1,9 @@
-import abstractview from './abstractview.js';
+import abstractview from './abstractview.js'
 
 export default class extends abstractview {
   constructor() {
-    super();
-    this.setTitle('Dashboard');
+    super()
+    this.setTitle('Dashboard')
   }
 
   async getHtml() {
@@ -12,6 +12,6 @@ export default class extends abstractview {
     <p>
         <a href="/dashboard" data-link>View recent dashboard</a>
     </p>
-    `;
+    `
   }
 }

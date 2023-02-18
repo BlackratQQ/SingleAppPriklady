@@ -1,6 +1,6 @@
 class menudown extends HTMLElement {
   constructor() {
-    super();
+    super()
     this.innerHTML = `    
     <div class="container">
     <nav>
@@ -444,14 +444,14 @@ class menudown extends HTMLElement {
       </ul>
     </nav>
   </div>
-  `;
+  `
   }
 }
 
-window.customElements.define('menu-down', menudown);
+window.customElements.define('menu-down', menudown)
 
-const selectElement = (element) => document.querySelector(element);
+const selectElement = element => document.querySelector(element)
 
 selectElement('.menu-icons').addEventListener('click', () => {
-  selectElement('nav').classList.toggle('active');
-});
+  selectElement('nav').classList.toggle('active')
+})

@@ -1,11 +1,11 @@
-import abstractview from '../abstractview.js';
-import initMath from '../../logic.js';
+import abstractview from '../abstractview.js'
+import initMath from '../../logic.js'
 
 export default class extends abstractview {
   constructor() {
-    super();
-    this.setTitle('Definiční obor');
-    initMath();
+    super()
+    this.setTitle('Definiční obor')
+    initMath()
   }
 
   async getHtml() {
@@ -14,11 +14,11 @@ export default class extends abstractview {
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <h2> Definiční obor</h2>
+    <h2>Definiční obor</h2>
 
     <div id="examples-container"></div>
 
     <script src="../../logic.js" type="module"></script>
-    `;
+    `
   }
 }

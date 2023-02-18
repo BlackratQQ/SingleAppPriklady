@@ -1,9 +1,9 @@
-import abstractview from './abstractview.js';
+import abstractview from './abstractview.js'
 
 export default class extends abstractview {
   constructor() {
-    super();
-    this.setTitle('Dashboard');
+    super()
+    this.setTitle('Dashboard')
   }
 
   async getHtml() {
@@ -13,6 +13,6 @@ export default class extends abstractview {
         <a href="/posts" data-link>View recent posts</a>
         <img src="Doucovani-Matika-Statistika-Ekonomicke-metody-IKONA.png">
     </p>
-    `;
+    `
   }
 }

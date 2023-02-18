@@ -1,11 +1,11 @@
-import abstractview from '../abstractview.js';
-import initMath from '../../logic.js';
+import abstractview from '../abstractview.js'
+import initMath from '../../logic.js'
 
 export default class extends abstractview {
   constructor() {
-    super();
-    this.setTitle('Soustavy liuneárních rovnic - Homogenní');
-    initMath();
+    super()
+    this.setTitle('Soustavy liuneárních rovnic - Homogenní')
+    initMath()
   }
 
   async getHtml() {
@@ -16,9 +16,9 @@ export default class extends abstractview {
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <h2>Soustavy liuneárních rovnic - Homogeni</h2>
 
-    <div id="examples-container"></div>
+    <div id="examples-container"></div> 
 
     <script src="../../logic.js" type="module"></script>
-    `;
+    `
   }
 }

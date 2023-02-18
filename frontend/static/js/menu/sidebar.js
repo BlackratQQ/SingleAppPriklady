@@ -1,6 +1,6 @@
 class verticalmenu extends HTMLElement {
   constructor() {
-    super();
+    super()
     this.innerHTML = `
     <div class="menu-btn">
     <i class="fas fa-bars vertical"></i>
@@ -222,58 +222,58 @@ class verticalmenu extends HTMLElement {
       </div>
     </div>
   </div>
-  `;
+  `
   }
 }
 
-window.customElements.define('vertical-menu', verticalmenu);
+window.customElements.define('vertical-menu', verticalmenu)
 
 $(document).ready(function () {
   //jquery for toggle sub menus
   $('.sub-btn').click(function () {
-    $(this).next('.sub-menu').slideToggle();
-    $(this).find('.dropdown').toggleClass('rotate');
-  });
+    $(this).next('.sub-menu').slideToggle()
+    $(this).find('.dropdown').toggleClass('rotate')
+  })
 
   //jquery for expand and collapse the sidebar
 
   $('.close-btn').click(function () {
-    $('.side-bar').addClass('non-active');
-    $('.menu-btn').css('visibility', 'visible');
-  });
+    $('.side-bar').addClass('non-active')
+    $('.menu-btn').css('visibility', 'visible')
+  })
 
   $('.menu-btn').click(function () {
-    $('.side-bar').removeClass('non-active');
-    $('.menu-btn').css('visibility', 'hidden');
-  });
-});
+    $('.side-bar').removeClass('non-active')
+    $('.menu-btn').css('visibility', 'hidden')
+  })
+})
 
 const resizeHandler = (function () {
   // record current side of boundary:
-  const isBig = () => window.innerWidth > 850;
-  let wasBig = isBig();
+  const isBig = () => window.innerWidth > 850
+  let wasBig = isBig()
 
   return function handler(event) {
     //if (isBig() == wasBig) return; // no change
     if (window.innerWidth > 850) {
       // posted code:
-      $('.side-bar').removeClass('non-active');
-      console.log('1');
-      wasBig = true; // future use
+      $('.side-bar').removeClass('non-active')
+      console.log('1')
+      wasBig = true // future use
     } else {
       // posted code:
-      $('.side-bar').addClass('non-active');
-      wasBig = false;
+      $('.side-bar').addClass('non-active')
+      wasBig = false
     }
-  };
-})();
-window.addEventListener('resize', resizeHandler);
+  }
+})()
+window.addEventListener('resize', resizeHandler)
 
-document.querySelectorAll('a').forEach((item) => {
-  item.addEventListener('click', (event) => {
-    document.querySelectorAll('a').forEach((i) => {
-      i.classList.remove('active');
-    });
-    item.classList.add('active');
-  });
-});
+document.querySelectorAll('a').forEach(item => {
+  item.addEventListener('click', event => {
+    document.querySelectorAll('a').forEach(i => {
+      i.classList.remove('active')
+    })
+    item.classList.add('active')
+  })
+})

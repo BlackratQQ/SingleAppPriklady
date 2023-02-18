@@ -48,4 +48,4 @@ export const examples = [
     text: 'Text5',
     image: '/images/derivace/img2.png',
   },
-];
+]

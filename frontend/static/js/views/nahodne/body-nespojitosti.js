@@ -1,11 +1,11 @@
-import abstractview from '../abstractview.js';
-import initMath from '../../logic.js';
+import abstractview from '../abstractview.js'
+import initMath from '../../logic.js'
 
 export default class extends abstractview {
   constructor() {
-    super();
-    this.setTitle('Body nespojitosti');
-    initMath();
+    super()
+    this.setTitle('Body nespojitosti')
+    initMath()
   }
 
   async getHtml() {
@@ -14,11 +14,11 @@ export default class extends abstractview {
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <h2> Body nespojitosti</h2>
+    <h2>Body nespojitosti</h2>
 
     <div id="examples-container"></div>
 
     <script src="../../logic.js" type="module"></script>
-    `;
+    `
   }
 }

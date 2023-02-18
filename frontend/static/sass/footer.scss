@@ -1,0 +1,24 @@
+footer {
+  text-align: center;
+  height: 100%;
+  background-color: #262627;
+
+  & h2 {
+    color: #fff;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+.teacher {
+  color: #b9b9b9;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.fa-solid {
+  color: white;
+  padding: 5px;
+}

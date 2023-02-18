@@ -3,6 +3,7 @@
 @import 'sidebar';
 @import 'header';
 @import 'horizontalMenu';
+@import 'footer';
 
 * {
   margin: 0;
@@ -30,7 +31,10 @@ body {
 }
 
 a {
-  color: #009579;
+  color: #007bff;
+  &:hover {
+    color: #ff8c00;
+  }
 }
 
 h2 {
