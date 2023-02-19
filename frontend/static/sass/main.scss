@@ -17,7 +17,6 @@ body {
   color: black;
   background-size: cover;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   height: 95vh;
@@ -32,6 +31,7 @@ body {
 
 a {
   color: #007bff;
+  font-weight: bold;
   &:hover {
     color: #ff8c00;
   }

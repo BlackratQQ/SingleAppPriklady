@@ -3,7 +3,8 @@ class footer extends HTMLElement {
     super()
     this.innerHTML = `            
     <footer>
-      <h2>Kontakt</h2>
+      <h2>(.*)</h2>
+<p>Videa k tématu najdete ve videokurzu ZDE</p>
       <p class="teacher">Ing. Petr Hadraba</p>
       <p class="phone">
         <i class="fa-solid fa-phone"></i><a href="tel:721755339">721 755 339</a>
