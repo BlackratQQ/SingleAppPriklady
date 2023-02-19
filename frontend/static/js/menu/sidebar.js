@@ -17,6 +17,9 @@ class verticalmenu extends HTMLElement {
     <h1>Doučování</h1>
     <div class="menu">
       <div class="item">
+        <a href="/" data-link> Home <i class="fas fa-home dropdown"></i></a>
+      </div>
+      <div class="item">
         <a class="sub-btn">
           Matice
           <i class="fas fa-angle-right dropdown"></i>

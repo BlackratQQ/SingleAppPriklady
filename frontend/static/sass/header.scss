@@ -1,6 +1,13 @@
+@import 'fontsizes';
+
 .banner {
   height: 450px;
-  background-image: url('/images/banner.jpg');
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.7147233893557423) 100%,
+      rgba(0, 212, 255, 0) 100%
+    ),
+    url('/images/header.jpg');
   // background-size: cover;
   // background-position: top;
   /*Zafixuje vršek obrázku, který se nebude ořezávat*/
@@ -21,27 +28,24 @@
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 60px;
-}
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 
-.heading-primary--main {
-  display: block;
-  font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 35px;
-  animation-name: moveInLeft;
-  animation-duration: 3s;
-  /*animation-timing-function: ease-in;*/
-  /*animation-iteration-count: 3;*/
-  /*animation-delay: 3s;*/
-}
-
-.heading-primary--sub {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 17.4px;
-  animation-name: moveInRight;
-  animation-duration: 3s;
+  &--main {
+    display: block;
+    font-size: var(--fs-1000);
+    font-weight: bold;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+  }
+  & .heading-primary--sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+  }
 }
 
 @keyframes moveInLeft {
