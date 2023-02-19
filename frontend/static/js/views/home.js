@@ -8,7 +8,7 @@ export default class extends abstractview {
 
   async getHtml() {
     return `
-    <h1>Úvod</h1>
+    <h2>Úvod</h2>
     <p>
       Ahoj. Na této stránce najdeš spoustu příkladů na procvičení z
       matematiky pro VŠ. V menu si stačí vybrat dané téma. U příkladů jsou

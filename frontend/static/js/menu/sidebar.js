@@ -14,7 +14,7 @@ class verticalmenu extends HTMLElement {
         <img src="/images/logo.png" alt="Logo" />
       </a>
     </div>
-    <h1>Doučování</h1>
+    <h1>Doučování </br> s Petrem</h1>
     <div class="menu">
       <div class="item">
         <a href="/" data-link> Home <i class="fas fa-home dropdown"></i></a>
