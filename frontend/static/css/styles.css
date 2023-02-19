@@ -36,15 +36,7 @@
   --fs-xl: clamp(3rem, 1vw + 1rem, 3.5rem);
   --fs-600: clamp(1rem, 1vw + 1rem, 1.5rem);
   --fs-500: 1.25rem;
-  --fs-400: clamp(0.7rem, 1.1vw + 1rem, 1.2rem);
-  --fs-1000: clamp(1rem, 8vw, 10rem); }
-
-:root {
-  --fs-xl: clamp(3rem, 1vw + 1rem, 3.5rem);
-  --fs-600: clamp(1rem, 1vw + 1rem, 1.5rem);
-  --fs-500: 1.25rem;
-  --fs-400: clamp(0.7rem, 1.1vw + 1rem, 1.2rem);
-  --fs-1000: clamp(1rem, 8vw, 10rem); }
+  --fs-400: clamp(0.7rem, 1.1vw + 1rem, 1.2rem); }
 
 .side-bar {
   background: #004186e3;
@@ -127,7 +119,7 @@ h1 {
   animation: pulse 1s infinite; }
 
 .menu-btn {
-  color: #fff;
+  color: black;
   position: fixed;
   font-size: 35px;
   cursor: pointer;
@@ -165,7 +157,7 @@ h1 {
 
 .banner {
   height: 450px;
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.714723) 100%, rgba(0, 212, 255, 0) 100%), url("/images/header.jpg");
+  background-image: url("/images/banner.jpg");
   /*Zafixuje vršek obrázku, který se nebude ořezávat*/
   position: relative;
   /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */ }
@@ -175,31 +167,32 @@ h1 {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /*elementy se počítají od levého horního rohu pozice. Toto nám udělá to, že se ta pozice posune na střed*/
   text-align: center; }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 60px;
-  text-shadow: 0px 0px 20px black; }
-  .heading-primary--main {
-    display: block;
-    font-size: var(--fs-1000);
-    font-weight: bold;
-    letter-spacing: 35px;
-    animation-name: moveInLeft;
-    animation-duration: 3s; }
-  .heading-primary .heading-primary--sub {
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 17.4px;
-    animation-name: moveInRight;
-    animation-duration: 3s; }
+  margin-bottom: 60px; }
 
-@media screen and (max-width: 850px) {
-  #heading-primary--main {
-    font-size: 5rem; } }
+.heading-primary--main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  /*animation-timing-function: ease-in;*/
+  /*animation-iteration-count: 3;*/
+  /*animation-delay: 3s;*/ }
+
+.heading-primary--sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  animation-name: moveInRight;
+  animation-duration: 3s; }
 
 @keyframes moveInLeft {
   0% {
@@ -316,7 +309,7 @@ header {
   background-color: #007bff; }
 
 .menu-icons {
-  color: #fff;
+  color: black;
   position: absolute;
   font-size: 35px;
   cursor: pointer;
@@ -486,7 +479,7 @@ footer {
     color: #fff; }
   footer p {
     font-size: 1.4rem;
-    line-height: 2.3rem; }
+    line-height: 2rem; }
 
 .teacher {
   color: #b9b9b9;
@@ -519,8 +512,7 @@ body {
   font-weight: 500; }
 
 a {
-  color: #007bff;
-  font-weight: bold; }
+  color: #007bff; }
   a:hover {
     color: #ff8c00; }
 

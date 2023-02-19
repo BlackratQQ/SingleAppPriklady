@@ -1,4 +1,6 @@
-import home from './views/home.js'
+import dashboard from './views/dashboard.js'
+import posts from './views/posts.js'
+import settings from './views/settings.js'
 import podil from './views/derivace/podil.js'
 import soucetRozdil from './views/derivace/soucet-a-rozdil.js'
 import slozenaFunkce from './views/derivace/slozena-funkce.js'
@@ -48,7 +50,9 @@ const navigateTo = url => {
 
 const router = async () => {
   const routes = [
-    { path: '/', view: home },
+    { path: '/', view: dashboard },
+    { path: '/posts', view: posts },
+    { path: '/settings', view: settings },
     { path: '/derivace/podil', view: podil },
     { path: '/derivace/soucet-a-rozdil', view: soucetRozdil },
     { path: '/derivace/slozena-funkce', view: slozenaFunkce },
