@@ -14,7 +14,9 @@ export default class extends abstractview {
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <h2>Matice - Vlastni čísla a vektory</h2>
+     <h2>Matice - Vlastni čísla a vektory</h2>
+     <p>Videa k tématu najdete ve videokurzu ZDE</p>
+
 
     <div id="examples-container"></div>
 
