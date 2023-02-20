@@ -252,24 +252,20 @@ $(document).ready(function () {
 })
 
 const resizeHandler = (function () {
-  // record current side of boundary:
   const isBig = () => window.innerWidth > 850
   let wasBig = isBig()
-
   return function handler(event) {
     //if (isBig() == wasBig) return; // no change
     if (window.innerWidth > 850) {
-      // posted code:
       $('.side-bar').removeClass('non-active')
-      console.log('1')
       wasBig = true // future use
     } else {
-      // posted code:
       $('.side-bar').addClass('non-active')
       wasBig = false
     }
   }
 })()
+resizeHandler()
 window.addEventListener('resize', resizeHandler)
 
 document.querySelectorAll('a').forEach(item => {
