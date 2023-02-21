@@ -6,7 +6,7 @@ export const examples = [
     answer:
       '(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)',
     text: 'Text2',
-    image: '/images/derivace/img.svg',
+    image: '/derivace/img.svg',
   },
   {
     numberEx: '1',
@@ -47,7 +47,7 @@ export const examples = [
     answer:
       '(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)(answer for 2)',
     text: 'Text2',
-    image: '/images/derivace/img.svg',
+    image: '/derivace/img.svg',
   },
   {
     numberEx: '1',

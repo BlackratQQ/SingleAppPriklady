@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 //cesta k images, aby byli veřejné
-app.use(express.static(path.join(__dirname, 'frontend/public')))
+app.use(express.static(path.join(__dirname, 'frontend/images')))
 
 app.use(
   '/static',
