@@ -15,7 +15,7 @@ export default class extends abstractview {
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
      <h2>Matice - Vlastni čísla a vektory</h2>
-     <p>Videa k tématu najdete ve videokurzu <a href="https://www.doucovanispetrem.cz/matematika-obecne/funkce/">ZDE</a></p>
+     <p>Videa k tématu najdete ve videokurzu <a href="https://www.doucovanispetrem.cz/matematika-obecne/matice/">ZDE</a></p>
 
 
 
