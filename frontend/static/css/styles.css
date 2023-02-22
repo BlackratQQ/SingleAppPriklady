@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #grid {
   display: grid;
-  grid-template-rows: 450px auto 250px;
+  grid-template-rows: clamp(200px, 35vw, 450px) auto 250px;
   grid-template-columns: 16% 75.5% 8.5%;
   gap: 0;
   width: 100vw; }
@@ -110,10 +110,10 @@ h1 {
 
 .close-btn {
   position: absolute;
-  color: #fff;
+  color: red;
   font-size: 30px;
-  right: 0px;
-  margin: 15px;
+  top: 0;
+  right: 10px;
   cursor: pointer; }
 
 .close-btn:hover {
@@ -164,8 +164,9 @@ h1 {
   --fs-1000: clamp(1rem, 8vw, 10rem); }
 
 .banner {
-  height: 450px;
+  height: clamp(200px, 35vw, 450px);
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.714723) 100%, rgba(0, 212, 255, 0) 100%), url("/images/header.jpg");
+  background-size: cover;
   /*Zafixuje vršek obrázku, který se nebude ořezávat*/
   position: relative;
   /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */ }
@@ -197,6 +198,10 @@ h1 {
     letter-spacing: 17.4px;
     animation-name: moveInRight;
     animation-duration: 3s; }
+
+@media screen and (max-width: 850px) {
+  .heading-primary--main {
+    letter-spacing: 15px; } }
 
 @keyframes moveInLeft {
   0% {
@@ -466,7 +471,7 @@ li.move-right {
     position: absolute;
     font-size: 30px;
     right: 0px;
-    margin: 15px;
+    margin: 15px 15px 15px 30px;
     cursor: pointer; }
   nav.active .fa-bars {
     display: none; }
@@ -511,7 +516,7 @@ body {
   overflow-x: hidden; }
 
 #app {
-  margin: 2em;
+  margin: 2em 2em 2em 2em;
   line-height: 1.5;
   font-weight: 500; }
 
@@ -546,6 +551,8 @@ h2 {
   display: none; }
 
 @media screen and (max-width: 1024px) {
+  #app {
+    margin: 2em 0 0 0; }
   .card,
   .wrapper {
     width: 100%; } }

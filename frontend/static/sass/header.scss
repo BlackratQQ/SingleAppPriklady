@@ -1,13 +1,14 @@
 @import 'fontsizes';
 
 .banner {
-  height: 450px;
+  height: clamp(200px, 35vw, 450px);
   background-image: radial-gradient(
       circle,
       rgba(0, 0, 0, 0.7147233893557423) 100%,
       rgba(0, 212, 255, 0) 100%
     ),
     url('/images/header.jpg');
+  background-size: cover;
   // background-size: cover;
   // background-position: top;
   /*Zafixuje vršek obrázku, který se nebude ořezávat*/
@@ -45,6 +46,11 @@
     letter-spacing: 17.4px;
     animation-name: moveInRight;
     animation-duration: 3s;
+  }
+}
+@media screen and (max-width: 850px) {
+  .heading-primary--main {
+    letter-spacing: 15px;
   }
 }
 

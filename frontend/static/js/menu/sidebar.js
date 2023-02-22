@@ -2,7 +2,7 @@ class verticalmenu extends HTMLElement {
   constructor() {
     super()
     this.innerHTML = `
-    <div class="menu-btn">
+  <div class="menu-btn">
     <i class="fas fa-bars vertical"></i>
   </div>
   <div class="side-bar">

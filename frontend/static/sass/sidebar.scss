@@ -86,11 +86,12 @@ h1 {
 
 .close-btn {
   position: absolute;
-  color: #fff;
+  color: red;
 
   font-size: 30px;
-  right: 0px;
-  margin: 15px;
+  top: 0;
+  right: 10px;
+  //padding: 15px;
   cursor: pointer;
 }
 
