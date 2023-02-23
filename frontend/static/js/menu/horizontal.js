@@ -1,6 +1,6 @@
 class menudown extends HTMLElement {
   constructor() {
-    super()
+    super();
     this.innerHTML = `    
     <div class="container">
     <nav>
@@ -208,6 +208,12 @@ class menudown extends HTMLElement {
                     <li>
                       <a
                         href="https://www.doucovanispetrem.cz/zcu/fek/operacni-vyzkum/">
+                        Manažerské modelování - operační výzkum
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.doucovanispetrem.cz/zcu/fek/operacni-vyzkum/">
                         Operační výzkum
                       </a>
                     </li>
@@ -242,7 +248,7 @@ class menudown extends HTMLElement {
                     <li>
                       <a
                         href="https://www.doucovanispetrem.cz/ujep/fse/data-rozhodovani/">
-                        Data a rozhodování
+                        Data a rozhodování – statistická analýza dat
                       </a>
                     </li>
                     <li>
@@ -444,14 +450,13 @@ class menudown extends HTMLElement {
       </ul>
     </nav>
   </div>
-  `
+  `;
   }
 }
 
-window.customElements.define('menu-down', menudown)
-
-const selectElement = element => document.querySelector(element)
+window.customElements.define('menu-down', menudown);
+const selectElement = element => document.querySelector(element);
 
 selectElement('.menu-icons').addEventListener('click', () => {
-  selectElement('nav').classList.toggle('active')
-})
+  selectElement('nav').classList.toggle('active');
+});

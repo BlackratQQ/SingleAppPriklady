@@ -1,6 +1,7 @@
 .side-bar {
   background: #004186e3;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   width: 100%;
   height: 100vh;
   overflow-y: auto;
@@ -85,13 +86,15 @@ h1 {
 }
 
 .close-btn {
-  position: absolute;
-  color: red;
+  position: relative;
+  color: #fff;
 
-  font-size: 30px;
-  top: 0;
-  right: 10px;
-  //padding: 15px;
+  font-size: 40px;
+  // // top: 0;
+  // // right: 10px;
+  float: right;
+  right: 20px;
+  margin-top: 15px;
   cursor: pointer;
 }
 
@@ -106,6 +109,11 @@ h1 {
   cursor: pointer;
   top: 7px;
   left: 14px;
+}
+
+.menu-btn.black {
+  color: #007bff;
+  //text-shadow: 0px 0px 20px #000000;
 }
 
 .menu-btn:hover {

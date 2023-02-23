@@ -33,7 +33,7 @@
     grid-template-columns: 8.5% 83% 8.5%; } }
 
 :root {
-  --fs-xl: clamp(3rem, 1vw + 1rem, 3.5rem);
+  --fs-xl: clamp(1.7rem, 3vw, 3.5rem);
   --fs-600: clamp(1rem, 1vw + 1rem, 1.5rem);
   --fs-500: 1.25rem;
   --fs-400: clamp(0.7rem, 1.1vw + 1rem, 1.2rem);
@@ -42,6 +42,7 @@
 .side-bar {
   background: #004186e3;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   width: 100%;
   height: 100vh;
   overflow-y: auto;
@@ -109,11 +110,12 @@ h1 {
   transform: rotate(90deg); }
 
 .close-btn {
-  position: absolute;
-  color: red;
-  font-size: 30px;
-  top: 0;
-  right: 10px;
+  position: relative;
+  color: #fff;
+  font-size: 40px;
+  float: right;
+  right: 20px;
+  margin-top: 15px;
   cursor: pointer; }
 
 .close-btn:hover {
@@ -126,6 +128,9 @@ h1 {
   cursor: pointer;
   top: 7px;
   left: 14px; }
+
+.menu-btn.black {
+  color: #007bff; }
 
 .menu-btn:hover {
   transition: 0.6s ease;
@@ -157,7 +162,7 @@ h1 {
     margin-left: -250px; } }
 
 :root {
-  --fs-xl: clamp(3rem, 1vw + 1rem, 3.5rem);
+  --fs-xl: clamp(1.7rem, 3vw, 3.5rem);
   --fs-600: clamp(1rem, 1vw + 1rem, 1.5rem);
   --fs-500: 1.25rem;
   --fs-400: clamp(0.7rem, 1.1vw + 1rem, 1.2rem);

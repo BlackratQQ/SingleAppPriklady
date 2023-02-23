@@ -1,6 +1,6 @@
 class verticalmenu extends HTMLElement {
   constructor() {
-    super()
+    super();
     this.innerHTML = `
   <div class="menu-btn">
     <i class="fas fa-bars vertical"></i>
@@ -225,54 +225,72 @@ class verticalmenu extends HTMLElement {
       </div>
     </div>
   </div>
-  `
+  `;
   }
 }
 
-window.customElements.define('vertical-menu', verticalmenu)
+window.customElements.define('vertical-menu', verticalmenu);
 
 $(document).ready(function () {
   //jquery for toggle sub menus
   $('.sub-btn').click(function () {
-    $(this).next('.sub-menu').slideToggle()
-    $(this).find('.dropdown').toggleClass('rotate')
-  })
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+  });
 
   //jquery for expand and collapse the sidebar
 
   $('.close-btn').click(function () {
-    $('.side-bar').addClass('non-active')
-    $('.menu-btn').css('visibility', 'visible')
-  })
+    $('.side-bar').addClass('non-active');
+    $('.menu-btn').css('visibility', 'visible');
+  });
 
   $('.menu-btn').click(function () {
-    $('.side-bar').removeClass('non-active')
-    $('.menu-btn').css('visibility', 'hidden')
-  })
-})
+    $('.side-bar').removeClass('non-active');
+    $('.menu-btn').css('visibility', 'hidden');
+  });
+});
 
 const resizeHandler = (function () {
-  const isBig = () => window.innerWidth > 850
-  let wasBig = isBig()
+  const isBig = () => window.innerWidth > 850;
+  let wasBig = isBig();
   return function handler(event) {
-    //if (isBig() == wasBig) return; // no change
+    if (isBig() == wasBig) return; // no change
     if (window.innerWidth > 850) {
-      $('.side-bar').removeClass('non-active')
-      wasBig = true // future use
+      $('.side-bar').removeClass('non-active');
+      wasBig = true; // future use
     } else {
-      $('.side-bar').addClass('non-active')
-      wasBig = false
+      $('.side-bar').addClass('non-active');
+      wasBig = false;
     }
-  }
-})()
-resizeHandler()
-window.addEventListener('resize', resizeHandler)
+  };
+})();
+resizeHandler();
+window.addEventListener('resize', resizeHandler);
 
+//Změna barvy burger menu
+var header = $('.menu-btn');
+$(document).ready(function () {
+  var height = $('#banner').height();
+
+  var scrollChange = height + 24;
+  console.log(scrollChange);
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= scrollChange) {
+      header.addClass('black');
+    } else {
+      header.removeClass('black');
+    }
+  });
+});
+//active
 document.querySelectorAll('a').forEach(item => {
   item.addEventListener('click', event => {
     document.querySelectorAll('a').forEach(i => {
-      i.classList.remove('active')
-    })
-    item.classList.add('active')
-  })
-})
+      i.classList.remove('active');
+    });
+    item.classList.add('active');
+  });
+});
