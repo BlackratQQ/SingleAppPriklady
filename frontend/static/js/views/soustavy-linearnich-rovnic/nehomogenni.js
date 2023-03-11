@@ -14,8 +14,10 @@ export default class extends abstractview {
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-     <h2>Soustavy lineárních rovnic - Nehomogenni</h2>
-     <p>Videa k tématu najdete ve videokurzu <a href="https://www.doucovanispetrem.cz/matematika-obecne/matice/">ZDE</a></p>
+     <h2>Soustavy lineárních rovnic - Nehomogenní</h2>
+     <p>Videa k tématu najdete ve videokurzu 
+     <a href="https://www.doucovanispetrem.cz/matematika-obecne/matice/">ZDE</a>
+     </p>
 
 
     <div id="examples-container"></div>

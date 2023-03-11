@@ -10,7 +10,17 @@
 }
 
 .side-bar::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
+  background: #007bff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff8c00;
+  border-radius: 5px;
+
+  &:hover {
+    background: #c26d06;
+  }
 }
 
 .side-bar.non-active {

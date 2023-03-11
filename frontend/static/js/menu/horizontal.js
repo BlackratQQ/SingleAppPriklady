@@ -213,12 +213,6 @@ class menudown extends HTMLElement {
                     </li>
                     <li>
                       <a
-                        href="https://www.doucovanispetrem.cz/zcu/fek/operacni-vyzkum/">
-                        Operační výzkum
-                      </a>
-                    </li>
-                    <li>
-                      <a
                         href="https://www.doucovanispetrem.cz/zcu/fek/analyza-dat-modelu/">
                         Analýza dat a modelů (ADM)
                       </a>
@@ -408,7 +402,7 @@ class menudown extends HTMLElement {
                 <li>
                   <a
                     href="https://www.doucovanispetrem.cz/statistika-obecne/casove-rady/">
-                    Časové řády
+                    Časové řady
                   </a>
                 </li>
                 <li>
@@ -422,30 +416,32 @@ class menudown extends HTMLElement {
           </ul>
         </li>
         <li>
-          <a href="https://www.doucovanispetrem.cz/osobni-doucovani/">Osobní doučování</a>
+          <a href="https://www.doucovanispetrem.cz/osobni-doucovani/"
+            >Osobní doučování</a
+          >
         </li>
         <li>
-          <a href=https://www.doucovanispetrem.cz/osobni-doucovani/">
+          <a href="https://www.doucovanispetrem.cz/osobni-doucovani/">
             Připoj se na Facebooku
             <i class="fas fa-angle-right dropdown arrow-down"></i>
-            <ul class="sub-menu-ver">
-              <li>
-                <a href="https://www.facebook.com/groups/1239833489830622">
-                  Česká zemědělská univerzita
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/groups/572193144106485">
-                  Univerzita J. E. Purkyně
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/groups/380551680219051/">
-                  Západočeská univerzitza
-                </a>
-              </li>
-            </ul>
           </a>
+          <ul class="sub-menu-ver">
+            <li>
+              <a href="https://www.facebook.com/groups/1239833489830622">
+                Česká zemědělská univerzita
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/groups/572193144106485">
+                Univerzita J. E. Purkyně
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/groups/380551680219051/">
+                Západočeská univerzitza
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>

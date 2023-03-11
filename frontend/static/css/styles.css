@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 850px) {
   #grid {
-    grid-template-columns: 8.5% 83% 8.5%; } }
+    grid-template-columns: 1% 98% 1%; } }
 
 :root {
   --fs-xl: clamp(1.7rem, 3vw, 3.5rem);
@@ -50,7 +50,14 @@
   transition-property: left; }
 
 .side-bar::-webkit-scrollbar {
-  width: 0px; }
+  width: 10px;
+  background: #007bff; }
+
+::-webkit-scrollbar-thumb {
+  background: #ff8c00;
+  border-radius: 5px; }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c26d06; }
 
 .side-bar.non-active {
   margin-left: -100%; }
@@ -467,7 +474,8 @@ li.move-right {
     margin: 0 auto 0 0;
     line-height: initial; }
   .menu-icons {
-    display: block; }
+    display: block;
+    padding: 10px; }
   nav {
     height: 0; }
   .fa-times.horiozontal {
@@ -585,7 +593,7 @@ h2 {
     animation: pulse 1s infinite; }
 
 .result {
-  padding-top: 10px; }
+  padding: 10px; }
 
 .whattodo,
 .example {
@@ -626,7 +634,8 @@ h2 {
   padding-bottom: 10px; }
 
 .image {
-  padding: 10px; }
+  padding: 10px;
+  scale: 0.9; }
 
 .note {
   font-weight: bold; }

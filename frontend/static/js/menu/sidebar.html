@@ -101,7 +101,7 @@
             <a href="/funkce/linearne-lomena" class="sub-item" data-link>
               Lineárně lomená
             </a>
-            <a href="/funkce/exponencionalni" class="sub-item" data-link>
+            <a href="/funkce/exponencialni" class="sub-item" data-link>
               Exponenciální
             </a>
             <a href="/funkce/logaritmicka" class="sub-item" data-link>
@@ -148,14 +148,10 @@
           </div>
         </div>
         <div class="item">
-          <a href="/body-nespojitosti" id="body-nespojitosti" data-link>
-            Body nespojitosti
-          </a>
+          <a href="/body-nespojitosti" data-link> Body nespojitosti </a>
         </div>
         <div class="item">
-          <a href="/asymptoty-funkce" id="asymptoty-funkce" data-link>
-            Asymptoty funkce
-          </a>
+          <a href="/asymptoty-funkce" data-link> Asymptoty funkce </a>
         </div>
         <div class="item">
           <a class="sub-btn">
@@ -174,31 +170,24 @@
           </div>
         </div>
         <div class="item">
-          <a href="/tecny-a-normaly" id="tecmy-a-normaly" data-link>
-            Tečny a normály
-          </a>
+          <a href="/tecny-a-normaly" data-link> Tečny a normály </a>
         </div>
         <div class="item">
-          <a href="/tayloruv-polynom" id="tayloruv-polynom" data-link>
-            Taylorův polynom
-          </a>
+          <a href="/tayloruv-polynom" data-link> Taylorův polynom </a>
         </div>
         <div class="item">
-          <a href="/monotonie" id="monotonie" data-link> Monotonie </a>
+          <a href="/monotonie" data-link> Monotonie </a>
         </div>
         <div class="item">
-          <a href="/extremy" id="extremy" data-link> Extrémy </a>
+          <a href="/extremy" data-link> Extrémy </a>
         </div>
         <div class="item">
-          <a
-            href="/zakrivenost-a-inflexni-body"
-            id="zakrivenost-a-inflexní-body"
-            data-link>
+          <a href="/zakrivenost-a-inflexni-body" data-link>
             Zakřivenost a inflexní body
           </a>
         </div>
         <div class="item">
-          <a href="/prubeh-funkce">Průběh funkce</a>
+          <a href="/prubeh-funkce" data-link> Průběh funkce </a>
         </div>
         <div class="item">
           <a class="sub-btn">
@@ -242,22 +231,22 @@
       $(document).ready(function () {
         //jquery for expand and collapse the sidebar
         $('.menu-btn').click(function () {
-          $('.side-bar').addClass('active')
-          $('.menu-btn').css('visibility', 'hidden')
-        })
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css('visibility', 'hidden');
+        });
 
         //For close button
         $('.close-btn').click(function () {
-          $('.side-bar').removeClass('active')
-          $('.menu-btn').css('visibility', 'visible')
-        })
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css('visibility', 'visible');
+        });
 
         //jquery for toggle sub menus
         $('.sub-btn').click(function () {
-          $(this).next('.sub-menu').slideToggle()
-          $(this).find('.dropdown').toggleClass('rotate')
-        })
-      })
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+      });
     </script>
   </body>
 </html>

@@ -14,7 +14,7 @@ class verticalmenu extends HTMLElement {
         <img src="/images/logo.png" alt="Logo" />
       </a>
     </div>
-    <h1>Doučování </br> s Petrem</h1>
+    <h1>Doučování <br> s Petrem</h1>
     <div class="menu">
       <div class="item">
         <a href="/" data-link> Home <i class="fas fa-home dropdown"></i></a>
@@ -89,7 +89,7 @@ class verticalmenu extends HTMLElement {
           <a href="/funkce/linearne-lomena" class="sub-item" data-link>
             Lineárně lomená
           </a>
-          <a href="/funkce/exponencionalni" class="sub-item" data-link>
+          <a href="/funkce/exponencialni" class="sub-item" data-link>
             Exponenciální
           </a>
           <a href="/funkce/logaritmicka" class="sub-item" data-link>
@@ -136,12 +136,12 @@ class verticalmenu extends HTMLElement {
         </div>
       </div>
       <div class="item">
-        <a href="/body-nespojitosti" id="body-nespojitosti" data-link>
+        <a href="/body-nespojitosti" data-link>
           Body nespojitosti
         </a>
       </div>
       <div class="item">
-        <a href="/asymptoty-funkce" id="asymptoty-funkce" data-link>
+        <a href="/asymptoty-funkce" data-link>
           Asymptoty funkce
         </a>
       </div>
@@ -162,31 +162,30 @@ class verticalmenu extends HTMLElement {
         </div>
       </div>
       <div class="item">
-        <a href="/tecny-a-normaly" id="tecmy-a-normaly" data-link>
+        <a href="/tecny-a-normaly" data-link>
           Tečny a normály
         </a>
       </div>
       <div class="item">
-        <a href="/tayloruv-polynom" id="tayloruv-polynom" data-link>
+        <a href="/tayloruv-polynom" data-link>
           Taylorův polynom
         </a>
       </div>
       <div class="item">
-        <a href="/monotonie" id="monotonie" data-link> Monotonie </a>
+        <a href="/monotonie" data-link> Monotonie </a>
       </div>
       <div class="item">
-        <a href="/extremy" id="extremy" data-link> Extrémy </a>
+        <a href="/extremy" data-link> Extrémy </a>
       </div>
       <div class="item">
         <a
           href="/zakrivenost-a-inflexni-body"
-          id="zakrivenost-a-inflexní-body"
           data-link>
           Zakřivenost a inflexní body
         </a>
       </div>
       <div class="item">
-        <a href="/prubeh-funkce">Průběh funkce</a>
+        <a href="/prubeh-funkce" data-link> Průběh funkce </a>
       </div>
       <div class="item">
         <a class="sub-btn">
